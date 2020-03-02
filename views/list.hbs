@@ -1,0 +1,18 @@
+<h1>
+    courses
+</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    {{#each data}}
+    <tr>
+        <td>{{this._id }}</td>
+        <td>{{this.courseName}}</td>
+        <td>{{this.courseID}}</td>
+        <td><a href="Edit/{{this._id}}">ds</a></td>
+    </tr>
+    {{/each}}
+</table>

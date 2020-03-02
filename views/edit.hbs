@@ -1,0 +1,14 @@
+<h1>
+    courses
+</h1>
+
+<form method="POST">
+    {{#each data}}
+   Course Name <input name="Cname" value="{{this.courseName}}" type="text"/>
+   <br>
+   <hr>
+    Course ID :<input type="number" value="{{this.courseID}}" name='cid'/>
+    {{/each}}
+
+    <input type="submit"/>
+</form>
